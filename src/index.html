@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/dist/main.css">
+	<title>Feedback Form</title>
+</head>
+
+<body>
+	<div id='formWrapper'>
+		<h2>Форма обратной связи</h2>
+		<form id="feedbackForm" action="#" method="post">
+			<label for="name">Имя:</label>
+			<input type="text" id="name" name="name">
+
+			<label for="email">E-mail:</label>
+			<input id="email" name="email">
+
+			<label for="phone">Телефон:</label>
+			<input type="tel" id="phone" name="phone">
+
+			<label for="message">Сообщение:</label>
+			<textarea id="message" name="message" rows="4"></textarea>
+
+			<button type="submit">Отправить</button>
+		</form>
+
+		<button id="openModalBtn">8. Открыть модалку</button>
+
+		<div class="modal" id="myModal">
+			<div class="modal-content">
+				<span class="close" id="closeModalBtn">&times;</span>
+				<p id="modalHeader">Модальное окно</p>
+				<div id="modalContent">Дефолтный текст модального окна</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="/dist/main.bundle.js"></script>
+</body>
+
+</html>

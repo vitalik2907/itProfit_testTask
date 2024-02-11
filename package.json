@@ -1,0 +1,35 @@
+{
+	"name": "it-profit",
+	"version": "1.0.0",
+	"description": "It profit description",
+	"main": "server/index.cjs",
+	"type": "module",
+	"scripts": {
+		"build": "webpack --mode development",
+		"watch": "webpack --watch --mode development",
+		"start": "webpack-dev-server --mode development --open",
+		"prod": "webpack --mode production",
+		"server": "node server/index.cjs"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.23.9",
+		"@babel/preset-env": "^7.23.9",
+		"babel-loader": "^9.1.3",
+		"css-loader": "^6.10.0",
+		"mini-css-extract-plugin": "^2.8.0",
+		"node-sass": "^9.0.0",
+		"sass-loader": "^14.1.0",
+		"style-loader": "^3.3.4",
+		"webpack": "^5.90.1",
+		"webpack-cli": "^5.1.4"
+	},
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.18.2",
+		"libphonenumber-js": "^1.10.55",
+		"sass": "^1.70.0",
+		"webpack-dev-server": "^4.15.1"
+	}
+}
